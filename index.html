@@ -29,6 +29,9 @@
                 case 'portuguese':
                     document.getElementById('portuguese').style.display = 'block';
                     break;
+		case 'french':
+                    document.getElementById('french').style.display = 'block';
+                    break;
                 default:
                     document.getElementById('english').style.display = 'block';
                     break;
@@ -41,6 +44,7 @@
         <a href="#" onclick="changeLanguage('italian'); return false">Italiano</a>
 		<a href="#" onclick="changeLanguage('hungarian'); return false">Magyar</a>
         <a href="#" onclick="changeLanguage('portuguese'); return false">Português</a>
+        <a href="#" onclick="changeLanguage('french'); return false">Français</a>
     </p>
     <div id="english" class="language" style="display: block">
         <h3>READ THIS CAREFULLY BEFORE PROCEEDING</h3>
@@ -217,6 +221,30 @@
                 jailbreak.</i></p>
 		<p><i>ha nem működnének a régebbi játékaid akkor használd a Mira_NOHB-t</i></p>
 		<p><i>Magyarítást készítette: TheOneEyedGrimReaper</i></p>
+    </div>
+	<div id="french" class="language" style="display: block">
+        <h3>VEUILLEZ LIRE CE QUI SUIT ATTENTIVEMENT AVANT DE PROCEDER</h3>
+        <p><b>Si vous êtes bête: cela ne fonctionne QUE sur le FirmWare 6.72. Si vous êtes sur un firmware plus bas, télécharger la mise à jour retail en version 6.72 <a href="https://sce.party/firmwares">ici</a> et faites la mise à jour de votre console. Si vous êtes sur un firmware plus haut (ex. 7.02), votre console NE PEUT PAS ENCORE être JAILBREAKER.</b></p>
+        <p>Cet exploit consiste en deux étapes : le jailbreak (JB) actuel et Mire+HEN (MIRA). Pour <s>pirater des jeux</s> exécuter des homebrew, vous devez d'abord activer le JB et seulement après MIRA. Pas uniquement l'un des deux, il n'y a pas d'autres solutions. <b>D'abord JB et puis MIRA.</b></p>
+        <ol>
+            <li>Clickez sur le lien qui affiche JB. Dans plus ou moins 20 secondes, vous recevrez une alerte indiquant "You're all set!",
+                suivi par "There is not enough free system memory". Cela veut dire que tout s'est bien déroulé.<br />
+                Si quelque chose se passe mal durant le processus, vous pouvez recevoir une alerte indiquant "Jailbreak failed! Reboot your
+                PS4 and try again.". Dans ce cas de figure, vous devez redémarrer votre PS4, de préférence sans fermer la boite de dialogue.<br />
+                Si le système freeze pendant plus d'une minute (cela peut prendre plus de temps avec une connexion internet lente), redémarrer votre PS4 et réessayer.<br />
+                Si le système crash, (semblable à une extinction de la console), appuyer sur le bouton d'alimentation de la PS4 (PAS sur la manette) jusqu'à ce qu'elle se rallume, ensuite réessayez.
+            </li>
+            <li>Après avoir cliqué "OK" sur "There is not enough free system memory" et que la page se soit rechargée, cliquez sur le second lien o il est noté MIRA.
+            	Cela va activer Mira+HEN et débloquer le menu "Debug Settings". Dans plus ou moins 20 secondes, vous recevrez une alerte indiquant  "You're all set!", suivi par "There is not enough free system memory". Cela veut dire que tout s'est bien passé.<br />
+                Si le système freeze ou plante, lisez plus haut.</li>
+            <li><b>Pour les utilisateurs avancés:</b> Afin de charger vos propres "payloads" en utilisant NetCat, démarrer d'abord JB ensuite NETCAT et envoyez le payload via TCP sur le port 9021.</li>
+            <li><b>Pour les utilisateurs avancés:</b> Pour installer un fichier .pkg sans posséder une clé USB à grosse capacité, copiez le fichier .pkg vers "/user/home/fakeusb/" 
+            via FTP, ensuite connectez une clé USB et sélectionnez FAKEUSB (avec HEN déjà activé).
+                Ensuite allez dans "Debug Settings" et installez le package comme d'habitude.</li>
+        </ol>
+        <p><i>Les affirmations indiquant que Mira n'a pas de HEN sont fausses, ne les croyez pas!</i></p>
+        <p><i>Cet exploit <b>peut</b> crasher et freezer. Par moment, vous devrez essayer 10 fois afin d'obtenir le jailbreak.</i></p>
+        <p><i>Le serveur FTP écoute sur le port 2121.</i></p>
     </div>
 
 <a href="jb.html">JB</a>
